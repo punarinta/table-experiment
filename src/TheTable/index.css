@@ -1,0 +1,30 @@
+.the-table table {
+    display:block;
+    overflow-y: hidden;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+.the-table table tr {
+    height: 20px;
+}
+
+.the-table table td {
+    padding: 0 0.5rem;
+}
+
+.the-table {
+    display: flex;
+}
+
+.the-table__scroll {
+    width: 10px;
+    background: blue;
+}
+
+.the-table__scroll-knob {
+    width: 10px;
+    height: 10px;
+    background: red;
+    cursor: grabbing;
+}

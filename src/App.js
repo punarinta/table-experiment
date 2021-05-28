@@ -1,15 +1,19 @@
-import './App.css'
 import { useEffect, useState } from 'react'
-import Table from './Table'
+import TheTable from './TheTable'
+import './App.css'
 
 const dummy = []
+
+function createLongString () {
+  return Math.random().toString().padEnd(22, '0')
+}
 
 function App() {
   const [dummyData, setDummyData] = useState([])
 
   useEffect(() => {
-    for (let i = 0; i < 1000; i++) {
-      dummy.push([Math.random(), Math.random()])
+    for (let i = 0; i < 100; i++) {
+      dummy.push([createLongString(), createLongString()])
     }
 
     setDummyData(dummy)
@@ -17,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Table data={dummyData} />
+      <TheTable data={dummyData} />
     </div>
   )
 }
