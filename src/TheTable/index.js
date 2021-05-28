@@ -101,7 +101,7 @@ export default function Table ({data}) {
           className="the-table__scroll-knob"
           onMouseDown={onKnobMouseDown}
 
-          style={{transform: `translateY(${390 * state.visualScrollPos}px)`}}
+          style={{transform: `translateY(${385 * state.visualScrollPos}px)`}}
         />
       </div>
     </div>

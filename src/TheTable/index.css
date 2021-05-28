@@ -18,13 +18,13 @@
 }
 
 .the-table__scroll {
-    width: 10px;
-    background: blue;
+    width: 15px;
+    background: #ccc;
 }
 
 .the-table__scroll-knob {
-    width: 10px;
-    height: 10px;
-    background: red;
+    width: 15px;
+    height: 15px;
+    background: #a6a7a8;
     cursor: grabbing;
 }
